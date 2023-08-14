@@ -29,5 +29,3 @@ class BankAccount {
     this.getCustomerName = () => _customerName;
   }
 }
-
-// class
