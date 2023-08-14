@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./classes.js" defer></script>
+    <script src="./index.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container w-25 mt-5">
+      <form id="personal" class="m-auto">
+        <div class="mb-2">
+          <label for="customerName" class="col-sm-2 col-form-label"
+            >Customer Name</label
+          >
+          <input id="customerName" name="customerName" class="form-control" />
+        </div>
+
+        <div class="mb-2">
+          <label for="customerPassword" class="col-sm-2 col-form-label"
+            >Customer PIN</label
+          >
+          <input
+            id="customerPassword"
+            name="customerPassword"
+            class="form-control"
+            type="number"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">Create Wallet</button>
+      </form>
+      <div id="panel" class="hide">
+        <h1></h1>
+        <button id="deposit" class="btn btn-success">Deposit</button>
+        <button id="withdraw" class="btn btn-danger">Withdraw</button>
+        <button id="balance" class="btn btn-info">Show Balance</button>
+      </div>
+    </div>
+  </body>
+</html>
