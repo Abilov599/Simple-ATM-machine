@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
   const customerName = this.customerName.value;
   const customerPassword = this.customerPassword.value;
   if (customerName && customerPassword) {
-    user = BankAccount(customerName, customerPassword);
+    user = new BankAccount(customerName, customerPassword);
     e.target.style.display = "none";
     panel.classList.remove("hide");
     h1.textContent = "Hi, " + user.getCustomerName();
